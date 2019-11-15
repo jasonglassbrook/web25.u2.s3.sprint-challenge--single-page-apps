@@ -5,30 +5,11 @@ import { Route , Link } from 'react-router-dom';
 /// internal modules ///
 import Header from './components/Header';
 import WelcomePage from './components/WelcomePage';
-import CharactersList from './components/CharactersList';
-import LocationsList from './components/LocationsList';
+import CharactersPage from './components/CharactersPage';
+import LocationsPage from './components/LocationsPage';
 
 /// styles ///
 import './styles/App.css';
-
-/***************************************
-  STATES
-***************************************/
-const init = {
-};
-
-const addItem = (setItems) => (newItem) => {
-  console.log ('--- adding new item ---');
-  console.log (newItem);
-  //
-  setItems ((items) => ([
-    ...items,
-    {
-      ...newItem,
-      'id' : (Date.now ()),
-    },
-  ]));
-}
 
 /***************************************
   COMPONENT
@@ -47,11 +28,11 @@ function App () {
       />
       <Route
         exact path='/characters'
-        component={CharactersList}
+        component={CharactersPage}
       />
       <Route
         exact path='/locations'
-        component={LocationsList}
+        component={LocationsPage}
       />
     </div>
   );
