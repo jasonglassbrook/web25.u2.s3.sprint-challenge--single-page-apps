@@ -41,8 +41,8 @@ html , body , .root , .App {
 
 .card-deck {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
