@@ -14,11 +14,6 @@ import './styles/App.css';
   COMPONENT
 ***************************************/
 function App () {
-  /// states ///
-
-  /// effects ///
-
-  /// thing ///
   return (
     <div className='App'>
       <header>
