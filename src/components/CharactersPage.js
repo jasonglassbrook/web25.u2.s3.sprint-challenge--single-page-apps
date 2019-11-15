@@ -12,7 +12,7 @@ import CharactersList from './CharactersList';
 ***************************************/
 const init = {
   'query' : {},
-  'page' : 1,
+  'page' : null,
   'info' : {},
   'characters' : [],
 };
@@ -29,9 +29,16 @@ const CharactersPage = (props) => {
 
   /// virtual states ///
   const setData = (data) => {
-    setPage (getPage (data.info));
-    setInfo (data.info);
-    setCharacters (data.results);
+    console.log ('--- setting data... ---');
+    console.log (data);
+    if (data.error === undefined) {
+      setPage (getPage (data.info));
+      setInfo (data.info);
+      setCharacters (data.results);
+    }
+    else {
+      setData ({ info : {} , results : [] })
+    }
   }
 
   /// effects ///

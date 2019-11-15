@@ -48,7 +48,7 @@ const SearchForm = ({ search , ...props }) => {
         id='query-name'
         name='name'
         placeholder='Search Name'
-        value={query}
+        value={query.name}
         onChange={handleChange}
       />
       <StrapButton type='submit'>Search</StrapButton>
