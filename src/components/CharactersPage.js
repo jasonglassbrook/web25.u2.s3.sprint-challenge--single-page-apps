@@ -47,7 +47,7 @@ const CharactersPage = (props) => {
       </header>
       <main>
         <SearchForm search={setQuery}/>
-        <CharactersList/>
+        <CharactersList list={characters}/>
       </main>
     </section>
   );
