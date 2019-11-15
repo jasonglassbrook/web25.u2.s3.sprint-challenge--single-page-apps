@@ -30,3 +30,30 @@ export const fetchData = (api , initData) => (query , setData) => {
       console.log ("--- done. ---");
     })
 }
+
+/***************************************
+  MATCH PARAMS
+***************************************/
+
+export const matchQueryParam = (name , url) => {
+  const pattern = new RegExp (`.*[?&]${name}=([^&]+).*`);
+  const matches = pattern.exec (url);
+  if (matches) {
+    return (matches[matches.length - 1]);
+  }
+  else {
+    return (null);
+  }
+};
+
+export const matchPage = (url) => (matchQueryParam ('page' , url));
+
+export const getPage = (info) => {
+  let page = null;
+  if (page === null && info.prev !== '') {
+    page = matchPage (info.prev);
+  }
+  if (page === null && info.next !== '') {
+    page = matchPage (info.next);
+  }
+};
