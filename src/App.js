@@ -21,23 +21,27 @@ function App () {
   /// thing ///
   return (
     <div className='App'>
-      <nav>
-        <NavLink to='/'>Welcome</NavLink>
-        <NavLink to='/characters'>Characters</NavLink>
-        <NavLink to='/locations'>Locations</NavLink>
-      </nav>
-      <Route
-        exact path={['/' , '/welcome']}
-        component={WelcomePage}
-      />
-      <Route
-        exact path='/characters'
-        component={CharactersPage}
-      />
-      <Route
-        exact path='/locations'
-        component={LocationsPage}
-      />
+      <header>
+        <nav>
+          <NavLink to='/'>Welcome</NavLink>
+          <NavLink to='/characters'>Characters</NavLink>
+          <NavLink to='/locations'>Locations</NavLink>
+        </nav>
+      </header>
+      <main>
+        <Route
+          exact path={['/' , '/welcome']}
+          component={WelcomePage}
+        />
+        <Route
+          exact path='/characters'
+          component={CharactersPage}
+        />
+        <Route
+          exact path='/locations'
+          component={LocationsPage}
+        />
+      </main>
     </div>
   );
 }
