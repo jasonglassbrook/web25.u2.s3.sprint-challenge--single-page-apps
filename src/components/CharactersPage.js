@@ -11,7 +11,7 @@ import CharactersList from './CharactersList';
   STATES
 ***************************************/
 const init = {
-  'query' : '',
+  'query' : {},
   'page' : 1,
   'info' : {},
   'characters' : [],
