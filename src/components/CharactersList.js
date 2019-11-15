@@ -9,7 +9,7 @@ const init = {};
 /***************************************
   COMPONENT
 ***************************************/
-const CharacterList = (props) => {
+const CharactersList = (props) => {
   // TODO: Add useState to track data from useEffect
 
   React.useEffect(() => {
@@ -18,11 +18,11 @@ const CharacterList = (props) => {
   }, []);
 
   return (
-    <section className="character-list">
+    <section className="characters-list">
       TODO: `array.map()` over your state here!
     </section>
   );
 };
 
 /**************************************/
-export default CharacterList;
+export default CharactersList;
