@@ -7,7 +7,7 @@ import { Card, CardImg , CardBody , CardTitle } from 'reactstrap';
 ***************************************/
 const CharacterCard = ({ data , ...props }) => {
   return (
-    <Card>
+    <Card className='character'>
       <CardImg top width='100%' src={data.image} alt='character image'/>
       <CardBody>
         <CardTitle>{data.name}</CardTitle>
