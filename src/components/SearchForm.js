@@ -1,5 +1,10 @@
 /// external modules ///
 import React from 'react';
+import {
+  Form as StrapForm,
+  Input as StrapInput,
+  Button as StrapButton
+} from 'reactstrap';
 
 /***************************************
   STATES
@@ -11,9 +16,10 @@ const init = {};
 ***************************************/
 const SearchForm = (props) => {
   return (
-    <section className="search-form">
-      TODO: Add a search form here
-    </section>
+    <StrapForm className="search-form">
+      <StrapInput type='text' id='query' name='query' placeholder='Search'/>
+      <StrapButton type='submit'>Search</StrapButton>
+    </StrapForm>
   );
 };
 
