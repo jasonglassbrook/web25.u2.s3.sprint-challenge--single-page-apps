@@ -1,0 +1,135 @@
+@import url('./colors.css');
+
+/***************************************
+  basics
+***************************************/
+
+html {
+  background: var(--tw-gray-900);
+}
+
+html , body , .root , .App {
+  height: 100%;
+  width: 100%;
+}
+
+/***************************************
+  generics
+***************************************/
+
+.App section {
+  width: 100%;
+  padding: 16px;
+}
+
+.App section > header {
+  color: White;
+  text-align: center;
+}
+
+.card {
+  background: White;
+  box-shadow: 0 0 8px rgba(0 , 0 , 0 , 50%);
+
+  border-radius: 16px;
+  padding: 16px;
+
+  overflow: hidden;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+}
+
+/***************************************
+  App
+***************************************/
+
+.App > section > main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.App > section > * {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.App > section > *:first-child {
+  margin-top: 0;
+}
+.App > section > *:last-child {
+  margin-bottom: 0;
+}
+
+.App > section > main > section {
+  flex: 1 1 50%;
+  margin-left: 8px;
+  margin-right: 8px;
+
+  border-radius: 4px;
+
+  overflow: hidden;
+}
+.App > section > main > section:first-child {
+  margin-left: 0;
+}
+.App > section > main > section:last-child {
+  margin-right: 0;
+}
+
+.App header {
+  font-weight: bold;
+}
+
+/*******************
+  colors
+*******************/
+
+#forms {
+  background: var(--tw-gray-700);
+}
+
+#person-form {
+  background: var(--tw-red-500);
+}
+
+#team-form {
+  background: var(--tw-yellow-500);
+}
+
+#lists {
+  background: var(--tw-gray-800);
+}
+
+#persons-list {
+  background: var(--tw-green-500);
+}
+
+#teams-list {
+  background: var(--tw-blue-500);
+}
+
+/***************************************
+  Lists
+***************************************/
+
+#lists .card-deck {
+  padding: 8px;
+}
+
+#lists .card {
+  margin: 8px;
+}
+
+#lists .card > h4 {
+  font-weight: bold;
+}
+
+span.data-id {
+  font-weight: normal;
+  color: var(--tw-gray-500);
+}
