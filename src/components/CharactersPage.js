@@ -6,6 +6,14 @@ import SearchForm from './SearchForm';
 import CharactersList from './CharactersList';
 
 /***************************************
+  STATES
+***************************************/
+const init = {
+  'info' : {},
+  'characters' : [],
+};
+
+/***************************************
   COMPONENT
 ***************************************/
 const CharactersPage = (props) => {
@@ -13,9 +21,9 @@ const CharactersPage = (props) => {
     <section className="characters-page">
       <header>
         <h1>Characters</h1>
-        <SearchForm/>
       </header>
       <main>
+        <SearchForm/>
         <CharactersList/>
       </main>
     </section>
