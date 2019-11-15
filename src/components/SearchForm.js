@@ -10,7 +10,9 @@ import {
   STATES
 ***************************************/
 const init = {
-  'query' : '',
+  'query' : {
+    'name' : '',
+  },
 };
 
 /***************************************
@@ -20,7 +22,17 @@ const SearchForm = ({ search , ...props }) => {
   /// states ///
   const [query , setQuery] = React.useState (init.query);
 
+
   /// effects ///
+  const handleChange = (event) => {
+    const field = event.target.name;
+    const value = event.target.value;
+    setQuery ((query) => ({
+      ...query,
+      [field] : value,
+    }));
+  };
+
   const onSubmit = (event) => {
     event.preventDefault ();
     console.log ('--- submitting ---');
@@ -33,11 +45,11 @@ const SearchForm = ({ search , ...props }) => {
     <StrapForm className="search-form" onSubmit={onSubmit}>
       <StrapInput
         type='text'
-        id='query'
-        name='query'
-        placeholder='Search'
+        id='query-name'
+        name='name'
+        placeholder='Search Name'
         value={query}
-        onChange={(event) => {setQuery (event.target.value)}}
+        onChange={handleChange}
       />
       <StrapButton type='submit'>Search</StrapButton>
     </StrapForm>
