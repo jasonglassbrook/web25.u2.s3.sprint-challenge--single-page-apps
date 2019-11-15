@@ -2,6 +2,7 @@
 import React from 'react';
 
 /// internal modules ///
+import characterAPI from '../data/rickandmortyapi.com/character-api';
 import { fetchData , getPage } from '../data/fetch';
 import SearchForm from './SearchForm';
 import CharactersList from './CharactersList';
@@ -35,9 +36,8 @@ const CharactersPage = (props) => {
 
   /// effects ///
   React.useEffect(() => {
-    // TODO: Add API Request here - must run in `useEffect`
-    // Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
+    fetchData (characterAPI , init.characters) (query , setData);
+  }, [query]);
 
   /// thing ///
   return (
