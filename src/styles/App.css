@@ -61,88 +61,20 @@ html , body , .root , .App {
   padding: 8px;
 }
 
-/* .App > section > main {
+.search-form {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
-.App > section > * {
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-.App > section > *:first-child {
-  margin-top: 0;
-}
-.App > section > *:last-child {
-  margin-bottom: 0;
+.search-form > input {
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
-.App > section > main > section {
-  flex: 1 1 50%;
-  margin-left: 8px;
-  margin-right: 8px;
-
-  border-radius: 4px;
-
-  overflow: hidden;
+.search-form > input {
+  flex-grow: 0;
+  flex-shrink: 0;
 }
-.App > section > main > section:first-child {
-  margin-left: 0;
-}
-.App > section > main > section:last-child {
-  margin-right: 0;
-}
-
-.App header {
-  font-weight: bold;
-} */
-
-/*******************
-  colors
-*******************/
-
-/* #forms {
-  background: var(--tw-gray-700);
-}
-
-#person-form {
-  background: var(--tw-red-500);
-}
-
-#team-form {
-  background: var(--tw-yellow-500);
-}
-
-#lists {
-  background: var(--tw-gray-800);
-}
-
-#persons-list {
-  background: var(--tw-green-500);
-}
-
-#teams-list {
-  background: var(--tw-blue-500);
-} */
-
-/***************************************
-  Lists
-***************************************/
-
-/* #lists .card-deck {
-  padding: 8px;
-}
-
-#lists .card {
-  margin: 8px;
-}
-
-#lists .card > h4 {
-  font-weight: bold;
-}
-
-span.data-id {
-  font-weight: normal;
-  color: var(--tw-gray-500);
-} */
