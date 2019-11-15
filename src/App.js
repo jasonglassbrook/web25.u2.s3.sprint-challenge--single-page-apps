@@ -1,6 +1,11 @@
 /// external modules ///
 import React from 'react';
 import { Route , NavLink } from 'react-router-dom';
+import {
+  Navbar as StrapNavbar,
+  Nav as StrapNav,
+  NavItem as StrapNavItem
+} from 'reactstrap';
 
 /// internal modules ///
 import WelcomePage from './components/WelcomePage';
@@ -17,11 +22,19 @@ function App () {
   return (
     <div className='App'>
       <header>
-        <nav>
-          <NavLink to='/'>Welcome</NavLink>
-          <NavLink to='/characters'>Characters</NavLink>
-          <NavLink to='/locations'>Locations</NavLink>
-        </nav>
+        <StrapNavbar color='dark' dark>
+          <StrapNav navbar horizontal>
+            <StrapNavItem>
+              <NavLink to='/'>Welcome</NavLink>
+            </StrapNavItem>
+            <StrapNavItem>
+              <NavLink to='/characters'>Characters</NavLink>
+            </StrapNavItem>
+            <StrapNavItem>
+              <NavLink to='/locations'>Locations</NavLink>
+            </StrapNavItem>
+          </StrapNav>
+        </StrapNavbar>
       </header>
       <main>
         <Route

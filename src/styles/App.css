@@ -48,6 +48,17 @@ html , body , .root , .App {
   App
 ***************************************/
 
+.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.navbar-nav > .nav-item {
+  padding: 8px;
+}
+
 /* .App > section > main {
   display: flex;
   flex-direction: row;
