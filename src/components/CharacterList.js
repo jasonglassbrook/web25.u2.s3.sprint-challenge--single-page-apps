@@ -1,16 +1,28 @@
-import React, { useEffect, useState } from "react";
+/// external modules ///
+import React from 'react';
 
-export default function CharacterList() {
+/***************************************
+  STATES
+***************************************/
+const init = {};
+
+/***************************************
+  COMPONENT
+***************************************/
+const CharacterList = (props) => {
   // TODO: Add useState to track data from useEffect
 
-  useEffect(() => {
+  React.useEffect(() => {
     // TODO: Add API Request here - must run in `useEffect`
-    //  Important: verify the 2nd `useEffect` parameter: the dependancies array!
+    // Important: verify the 2nd `useEffect` parameter: the dependancies array!
   }, []);
 
   return (
     <section className="character-list">
-      <h2>TODO: `array.map()` over your state here!</h2>
+      TODO: `array.map()` over your state here!
     </section>
   );
-}
+};
+
+/**************************************/
+export default CharacterList;

@@ -1,3 +1,19 @@
-import React, { useEffect, useState } from "react";
+/// external modules ///
+import React from 'react';
 
-export default function LocationsList() {}
+/***************************************
+  STATES
+***************************************/
+const init = {};
+
+/***************************************
+  COMPONENT
+***************************************/
+const LocationsList = (props) => {
+  return (
+    <div></div>
+  );
+};
+
+/**************************************/
+export default LocationsList;

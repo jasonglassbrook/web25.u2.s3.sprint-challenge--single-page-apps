@@ -1,5 +1,14 @@
-import React from "react";
+/// external modules ///
+import React from 'react';
 
-export default function LocationCard({ name, type, dimension, residents }) {
-  return <span>todo: location</span>;
-}
+/***************************************
+  COMPONENT
+***************************************/
+const LocationCard = ({ name, type  , dimension , residents , ...props }) => {
+  return (
+    <div>TODO: location</div>
+  );
+};
+
+/**************************************/
+export default LocationCard;

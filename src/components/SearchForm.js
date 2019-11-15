@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+/// external modules ///
+import React from 'react';
 
-export default function SearchForm() {
- 
+/***************************************
+  STATES
+***************************************/
+const init = {};
+
+/***************************************
+  COMPONENT
+***************************************/
+const SearchForm = (props) => {
   return (
     <section className="search-form">
-     // Add a search form here
+      TODO: Add a search form here
     </section>
   );
-}
+};
+
+/**************************************/
+export default SearchForm;
+

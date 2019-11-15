@@ -1,5 +1,14 @@
-import React from "react";
+/// external modules ///
+import React from 'react';
 
-export default function CharacterCard() {
-  return <span>todo: character</span>;
-}
+/***************************************
+  COMPONENT
+***************************************/
+const CharacterCard = (props) => {
+  return (
+    <div>TODO: character</div>
+  );
+};
+
+/**************************************/
+export default CharacterCard;

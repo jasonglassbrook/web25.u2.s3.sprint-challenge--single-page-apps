@@ -1,6 +1,10 @@
-import React from "react";
+/// external modules ///
+import React from 'react';
 
-export default function WelcomePage() {
+/***************************************
+  COMPONENT
+***************************************/
+const WelcomePage = (props) => {
   return (
     <section className="welcome-page">
       <header>
@@ -13,4 +17,7 @@ export default function WelcomePage() {
       </header>
     </section>
   );
-}
+};
+
+/**************************************/
+export default WelcomePage;
