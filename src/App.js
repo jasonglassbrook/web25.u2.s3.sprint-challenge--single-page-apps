@@ -1,9 +1,8 @@
 /// external modules ///
 import React from 'react';
-import { Route , Link } from 'react-router-dom';
+import { Route , NavLink } from 'react-router-dom';
 
 /// internal modules ///
-import Header from './components/Header';
 import WelcomePage from './components/WelcomePage';
 import CharactersPage from './components/CharactersPage';
 import LocationsPage from './components/LocationsPage';
@@ -22,6 +21,11 @@ function App () {
   /// thing ///
   return (
     <div className='App'>
+      <nav>
+        <NavLink to='/'>Welcome</NavLink>
+        <NavLink to='/characters'>Characters</NavLink>
+        <NavLink to='/locations'>Locations</NavLink>
+      </nav>
       <Route
         exact path={['/' , '/welcome']}
         component={WelcomePage}
