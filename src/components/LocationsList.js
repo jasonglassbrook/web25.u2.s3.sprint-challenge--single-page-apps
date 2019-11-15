@@ -1,26 +1,20 @@
 /// external modules ///
 import React from 'react';
+import { CardDeck } from 'reactstrap';
 
-/***************************************
-  STATES
-***************************************/
-const init = {};
+/// internal modules ///
+import LocationCard from './LocationCard';
 
 /***************************************
   COMPONENT
 ***************************************/
-const LocationsList = (props) => {
-  // TODO: Add useState to track data from useEffect
-
-  React.useEffect(() => {
-    // TODO: Add API Request here - must run in `useEffect`
-    // Important: verify the 2nd `useEffect` parameter: the dependancies array!
-  }, []);
-
+const LocationsList = ({ list , ...props }) => {
   return (
-    <section className="locations-list">
-      TODO: `array.map()` over your state here!
-    </section>
+    <CardDeck className="locations-list">
+      {list.map ((location) => (
+        <LocationCard key={location.id} data={location}/>
+      ))}
+    </CardDeck>
   );
 };
 
