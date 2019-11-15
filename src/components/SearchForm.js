@@ -9,15 +9,36 @@ import {
 /***************************************
   STATES
 ***************************************/
-const init = {};
+const init = {
+  'query' : '',
+};
 
 /***************************************
   COMPONENT
 ***************************************/
-const SearchForm = (props) => {
+const SearchForm = ({ search , ...props }) => {
+  /// states ///
+  const [query , setQuery] = React.useState (init.query);
+
+  /// effects ///
+  const onSubmit = (event) => {
+    event.preventDefault ();
+    console.log ('--- submitting ---');
+    console.log (query);
+    search (query);
+  };
+
+  /// thing ///
   return (
-    <StrapForm className="search-form">
-      <StrapInput type='text' id='query' name='query' placeholder='Search'/>
+    <StrapForm className="search-form" onSubmit={onSubmit}>
+      <StrapInput
+        type='text'
+        id='query'
+        name='query'
+        placeholder='Search'
+        value={query}
+        onChange={(event) => {setQuery (event.target.value)}}
+      />
       <StrapButton type='submit'>Search</StrapButton>
     </StrapForm>
   );
