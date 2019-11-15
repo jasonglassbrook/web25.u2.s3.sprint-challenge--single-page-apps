@@ -1,8 +1,12 @@
 /// external modules ///
 import React from 'react';
+import { Route , Link } from 'react-router-dom';
 
 /// internal modules ///
-import Header from "./components/Header.js";
+import Header from './components/Header';
+import WelcomePage from './components/WelcomePage';
+import CharactersList from './components/CharactersList';
+import LocationsList from './components/LocationsList';
 
 /// styles ///
 import './styles/App.css';
@@ -36,8 +40,19 @@ function App () {
 
   /// thing ///
   return (
-    <div className="App">
-      <Header/>
+    <div className='App'>
+      <Route
+        exact path={['/' , '/welcome']}
+        component={WelcomePage}
+      />
+      <Route
+        exact path='/characters'
+        component={CharactersList}
+      />
+      <Route
+        exact path='/locations'
+        component={LocationsList}
+      />
     </div>
   );
 }
