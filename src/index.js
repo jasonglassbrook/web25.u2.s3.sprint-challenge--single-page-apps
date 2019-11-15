@@ -9,6 +9,7 @@ import App from './App';
 /// styles ///
 import 'reset-css/reset.css';
 import 'normalize-css/normalize.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/base.css';
 import './styles/index.css';
 
