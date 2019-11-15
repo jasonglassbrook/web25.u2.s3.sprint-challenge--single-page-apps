@@ -10,8 +10,17 @@ const init = {};
   COMPONENT
 ***************************************/
 const LocationsList = (props) => {
+  // TODO: Add useState to track data from useEffect
+
+  React.useEffect(() => {
+    // TODO: Add API Request here - must run in `useEffect`
+    // Important: verify the 2nd `useEffect` parameter: the dependancies array!
+  }, []);
+
   return (
-    <div></div>
+    <section className="locations-list">
+      TODO: `array.map()` over your state here!
+    </section>
   );
 };
 
