@@ -1,6 +1,9 @@
 /// external modules ///
 import React from 'react';
 
+/// internal modules ///
+import SearchForm from './SearchForm';
+
 /***************************************
   COMPONENT
 ***************************************/
@@ -14,6 +17,7 @@ const WelcomePage = (props) => {
           src="https://rickandmortyapi.com/api/character/avatar/1.jpeg"
           alt="rick"
         />
+        <SearchForm/>
       </header>
     </section>
   );
