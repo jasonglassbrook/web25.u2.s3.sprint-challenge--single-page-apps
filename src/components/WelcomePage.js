@@ -1,6 +1,13 @@
-import React from "react";
+/// external modules ///
+import React from 'react';
 
-export default function WelcomePage() {
+/// internal modules ///
+import SearchForm from './SearchForm';
+
+/***************************************
+  COMPONENT
+***************************************/
+const WelcomePage = (props) => {
   return (
     <section className="welcome-page">
       <header>
@@ -11,6 +18,12 @@ export default function WelcomePage() {
           alt="rick"
         />
       </header>
+      <main>
+        <SearchForm/>
+      </main>
     </section>
   );
-}
+};
+
+/**************************************/
+export default WelcomePage;

@@ -3,20 +3,20 @@ import React from 'react';
 import { CardDeck } from 'reactstrap';
 
 /// internal modules ///
-import LocationCard from './LocationCard';
+import CharacterCard from './CharacterCard';
 
 /***************************************
   COMPONENT
 ***************************************/
-const LocationsList = ({ list , ...props }) => {
+const CharactersList = ({ list , ...props }) => {
   return (
-    <CardDeck className="locations-list">
-      {list.map ((location) => (
-        <LocationCard key={location.id} data={location}/>
+    <CardDeck className="characters-list">
+      {list.map ((character) => (
+        <CharacterCard key={character.id} data={character}/>
       ))}
     </CardDeck>
   );
 };
 
 /**************************************/
-export default LocationsList;
+export default CharactersList;

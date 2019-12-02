@@ -1,0 +1,80 @@
+@import url('./colors.css');
+
+/***************************************
+  basics
+***************************************/
+
+/* html {
+  background: var(--tw-gray-900);
+} */
+
+html , body , .root , .App {
+  height: 100%;
+  width: 100%;
+}
+
+/***************************************
+  generics
+***************************************/
+
+/* .App section {
+  width: 100%;
+  padding: 16px;
+}
+
+.App section > header {
+  color: White;
+  text-align: center;
+} */
+
+.card {
+  background: White;
+  box-shadow: 0 0 8px rgba(0 , 0 , 0 , 50%);
+
+  border-radius: 16px;
+  padding: 16px;
+
+  flex: 1 0 25% !important;
+
+  overflow: hidden;
+}
+
+.card-deck {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/***************************************
+  App
+***************************************/
+
+.navbar-nav {
+  display: flex;
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+}
+
+.navbar-nav > .nav-item {
+  padding: 8px;
+}
+
+.search-form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.search-form > input {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.search-form > input {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
